@@ -7,7 +7,7 @@ More details can be referred to:
 
 # Input Data
 TREC-11 and TWT-16 Dataset are in `data/twitter-conv/`. 
-We remove the text of each tweet according to Twitter policy. One needs to download the tweets with the given tweet ID by Twitter API. All the Tweets text should be put in `text_lst` field of `twitter_m.json` accordingly.
+We remove the text of each tweet according to Twitter's policy. One needs to download the tweets with the given tweet ID by [Twitter API](https://developer.twitter.com/en/docs.html). All the Tweets text should be put in `text_lst` field of `twitter_m.json` accordingly.
 
 For example:
 
@@ -47,8 +47,7 @@ You can visualize the topic and discourse distribution among words by enabling `
 $ python topic_disc.py --output_vis True
 $ cd vis/
 $ python vis_atten.py   # you should put the gen_sample.txt to this folder.
-
 ```
-The final effect looks like this:
+The visualization looks like this:
 
-<p align="center"><img width="70%" src="case_disc.png" /></p>
+<p align="center"><img width="60%" src="case_disc.png" /></p>
